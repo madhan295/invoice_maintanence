@@ -1143,15 +1143,46 @@ img {
     .hero {
         flex-direction: column;
         padding-top: 40px;
+        text-align: center;
+    }
+    .hero-features {
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+    .feature-item {
+        justify-content: center;
+    }
+    .hero-actions {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .hero-actions .btn {
+        width: 100%;
+        max-width: 300px;
     }
     .hero-content h1 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+    }
+    .hero-content p {
+        margin: 0 auto 2rem;
+    }
+    .nav-container {
+        flex-direction: column;
+        gap: 20px;
     }
     .nav-links {
-        display: none; /* simple mobile menu hidden for now */
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
     }
     .services-grid, .testi-grid, .blog-grid {
         grid-template-columns: 1fr;
+    }
+    .stats-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 20px;
     }
     .process-steps {
         flex-direction: column;
@@ -1163,11 +1194,53 @@ img {
     .step-down {
         margin-top: 0;
     }
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
     .footer-grid {
         grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .social-links {
+        justify-content: center;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
     }
     .gallery-grid {
         grid-template-columns: 1fr 1fr;
     }
     .gallery-grid img:nth-child(1) { grid-column: span 2; }
+}
+
+@media (max-width: 480px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    .gallery-grid img:nth-child(1) { grid-column: span 1; }
+    .section-padding {
+        padding: 50px 0;
+    }
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    .cta-box {
+        padding: 30px 20px;
+    }
+    .cta-box h2 {
+        font-size: 1.8rem;
+    }
+    .cta-box > div {
+        flex-direction: column;
+        width: 100%;
+    }
+    .cta-box .btn {
+        width: 100%;
+    }
 }
