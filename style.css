@@ -1183,9 +1183,22 @@ img {
     }
     .nav-container {
         justify-content: space-between;
+        align-items: flex-start;
+    }
+    .logo {
+        max-width: calc(100% - 40px);
+    }
+    .logo div {
+        font-size: 1.1rem;
+        line-height: 1.2;
+        margin-bottom: 2px;
+    }
+    .logo span {
+        font-size: 0.65rem !important;
     }
     .mobile-menu-btn {
         display: block;
+        margin-top: 5px;
     }
     .nav-menu-wrapper {
         display: none;
