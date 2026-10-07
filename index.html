@@ -28,13 +28,20 @@
                     <span style="font-size: 0.7rem; font-weight: 400; opacity: 0.8; letter-spacing: 1px;">HEAL
                         NATURALLY, LIVE HEALTHILY</span>
                 </a>
-                <nav class="nav-links">
-                    <a href="#" class="active">Home</a>
-                    <a href="#">About Us</a>
-                    <a href="#">Treatments & Specializations</a>
-                    <a href="#">Practitioners</a>
-                </nav>
-                <a href="#" class="btn btn-yellow">Book Appointment</a>
+                
+                <div class="mobile-menu-btn" onclick="document.querySelector('.nav-menu-wrapper').classList.toggle('active')">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                <div class="nav-menu-wrapper">
+                    <nav class="nav-links">
+                        <a href="#" class="active">Home</a>
+                        <a href="#">About Us</a>
+                        <a href="#">Treatments & Specializations</a>
+                        <a href="#">Practitioners</a>
+                    </nav>
+                    <a href="#" class="btn btn-yellow">Book Appointment</a>
+                </div>
             </div>
         </header>
 
